@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>函数 | 晚霞の雷樱树下</title><meta name="author" content="晚霞"><meta name="copyright" content="晚霞"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="函数、极限与连续">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数">
+<meta property="og:url" content="http://example.com/2023/01/19/1/index.html">
+<meta property="og:site_name" content="晚霞の雷樱树下">
+<meta property="og:description" content="函数、极限与连续">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1.vika.cn/space/2023/01/17/3f5c4ae42f7448fa9d359085eb6fa670">
+<meta property="article:published_time" content="2023-01-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-18T16:07:34.795Z">
+<meta property="article:author" content="晚霞">
+<meta property="article:tag" content="高等数学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.vika.cn/space/2023/01/17/3f5c4ae42f7448fa9d359085eb6fa670"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/01/19/1/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '函数',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-19 00:07:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s1.vika.cn/space/2023/01/17/3f5c4ae42f7448fa9d359085eb6fa670" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="晚霞の雷樱树下"><span class="site-name">晚霞の雷樱树下</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">函数</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-18T16:00:00.000Z" title="发表于 2023-01-19 00:00:00">2023-01-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-18T16:07:34.795Z" title="更新于 2023-01-19 00:07:34">2023-01-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="函数"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="第一章-函数、极限与连续"><a href="#第一章-函数、极限与连续" class="headerlink" title="第一章      函数、极限与连续"></a>第一章      函数、极限与连续</h3><h4 id="§1-函数"><a href="#§1-函数" class="headerlink" title="§1 函数"></a>§1 函数</h4><h5 id="一、邻域"><a href="#一、邻域" class="headerlink" title="一、邻域"></a>一、邻域</h5><p>​    在高中三年的学习中，我们已经学习了各类的函数，例如三角函数，对数函数，幂函数等等，在此不做多的赘述。</p>
+<p>​    我们先来介绍一个重要的知识点—-邻域。</p>
+<p>​    以下是它的定义：</p>
+<p>​           <em><strong>设a是一个正数，δ是任一正数，则开区间（a-δ，a+δ）称为点a的δ邻域，记作</strong></em></p>
+<p><img src="https://s1.vika.cn/space/2023/01/18/ef059f1e50c648c2b6b2cd0c94e1e00f" alt="image-20230118234803835"></p>
+<p>​          <em><strong>点a称为这个邻域的中心，δ称为这个邻域的半径。（如下图）</strong></em></p>
+<p><img src="https://s1.vika.cn/space/2023/01/18/4b515bc9886042d5b910546510bfe93f" alt="image-20230118235128715"></p>
+<p>   根据以上内容我们不难发现，<u>领域U (a,δ)表示的是数轴上与点a的距离小于δ的一切点的合集</u>。</p>
+<p>   在邻域的基础上，又出现了去掉中心点a的集合，称之为<strong>点a的去心δ邻域</strong>，表示为Ů(a,δ)。</p>
+<h5 id="二、分段函数"><a href="#二、分段函数" class="headerlink" title="二、分段函数"></a>二、分段函数</h5><p>​        我们继续补充一个知识点，关于函数y=sgnx。这个函数很具有代表性，对于了解分段函数有较大的启发性。</p>
+<p>​                                 <strong>当x&gt;0,sgnx= 1；当 x=0,sgnx= 0；当 x&lt;0,sgnx=-1</strong>.</p>
+<p>​        下图为其函数图像，可见其具有非常明显的分段函数特性</p>
+<p>​     <img src="https://iknow-pic.cdn.bcebos.com/72f082025aafa40f7e8457a3bb64034f78f01909?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1/quality,q_85/format,f_auto" alt="img"></p>
+<h5 id="三、反函数"><a href="#三、反函数" class="headerlink" title="三、反函数"></a>三、反函数</h5><h6 id="Ⅰ、定义"><a href="#Ⅰ、定义" class="headerlink" title="Ⅰ、定义"></a>Ⅰ、定义</h6><p>​     <strong>设函数y=f(x)的定义域是D，<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%80%BC%E5%9F%9F?fromModule=lemma_inlink">值域</a>是f(D)。如果对于值域f(D)中的每一个y，在D中有且只有一个x使得g(y)=x，则按此对应法则得到了一个定义在f(D)上的函数，并把该函数称为函数y=f(x)的反函数，记为</strong></p>
+<p><img src="https://s1.vika.cn/space/2023/01/18/74264070c40a401386e901e02472b532" alt="image-20230118234836406"></p>
+<h6 id="Ⅱ、常见的三角的反函数"><a href="#Ⅱ、常见的三角的反函数" class="headerlink" title="Ⅱ、常见的三角的反函数"></a>Ⅱ、常见的三角的反函数</h6><p>​     常见的三角函数的反函数有</p>
+<p>​                   sin x —— arcsin x；cos x —— arccos x；tan x —— arctan x;</p>
+<p>​     再就是中学时期少见的几个三角函数：正割函数，余割函数，余切函数。</p>
+<p>​                                   分别用符号表示为：  sec x    ，cec x       ，cot x。</p>
+<p>​     如果大家不嫌话多，那我们就再补充以下关于以上三个函数的一些常用已知转化公式：</p>
+<p>​                                 <strong>①1+tan² x=sec² x；②1+cot² x=cec² x</strong>；</p>
+<p>​     还有和差化积的公式，我放在这里供大家复习一下：</p>
+<p><img src="https://s1.vika.cn/space/2023/01/18/2a8d03d46af0416086a17eb758ee7cf2" alt="image-20230118234924509"></p>
+<p>​      在有些解题的过程中，运用和差化积公式可能会有奇效，但也不能将思维束缚在和差化积的公式里面，不能将思维公式化。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">晚霞</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/01/19/1/">http://example.com/2023/01/19/1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">晚霞の雷樱树下</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a></div><div class="post_share"><div class="social-share" data-image="https://s1.vika.cn/space/2023/01/17/3f5c4ae42f7448fa9d359085eb6fa670" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s1.vika.cn/space/2023/01/17/3f5c4ae42f7448fa9d359085eb6fa670" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">晚霞</div><div class="author-info__description">永恒即是真理</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD"><span class="toc-number">1.</span> <span class="toc-text">第一章      函数、极限与连续</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%C2%A71-%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.</span> <span class="toc-text">§1 函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%82%BB%E5%9F%9F"><span class="toc-number">1.1.1.</span> <span class="toc-text">一、邻域</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.2.</span> <span class="toc-text">二、分段函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%8F%8D%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.3.</span> <span class="toc-text">三、反函数</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%85%A0%E3%80%81%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">Ⅰ、定义</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%85%A1%E3%80%81%E5%B8%B8%E8%A7%81%E7%9A%84%E4%B8%89%E8%A7%92%E7%9A%84%E5%8F%8D%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">Ⅱ、常见的三角的反函数</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/19/1/" title="函数">函数</a><time datetime="2023-01-18T16:00:00.000Z" title="发表于 2023-01-19 00:00:00">2023-01-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 晚霞</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
